@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paw4U • Adoptions</title>
+  <link rel="stylesheet" href="../css/responsivepetshop.css">
+  <style>.gallery img{ margin:8px; }</style> <!-- page-level image spacing -->
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="../images/paws4ulogo.gif" class="logo" alt="Paw4U logo" title="Paw4U">
+      <h1 id="pagetitle">Adoptions</h1>
+    </header>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="../homework/paws4uindex.html">Home</a></li>
+        <li><a href="../homework/paws4uadoptions.html" aria-current="page">Adoptions</a></li>
+        <li><a href="../homework/paws4uservices.html">Services</a></li>
+        <li><a href="../homework/paws4uaboutus.html">About Us</a></li>
+        <li><a href="..homework/paws4uslideshow.htl">Slideshow</a></li>
+        <li><a href="..homework/paws4ulocations.html">Locations</a></li>
+      </ul>
+    </nav>
+
+    <main id="content">
+      <h2>Find your new best friend</h2>
+      <section class="gallery" aria-label="Adoptable pets">
+        <figure>
+          <img src="../images/puppy1.jpeg" alt="Small brown puppy" title="Jojo the playful puppy">
+          <figcaption>Jojo • Puppy • Vaccinated</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/black cat.jpeg" alt="A black cat named Misty sitting by a stack of books" title="Misty the cat">
+          <figcaption>Misty • Adult • Microchipped</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/hamster.jpeg" alt="A lively hamster named Guppy" title="Guppy the speedy hamster">
+          <figcaption>Guppy • Hamster • Speedy</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/sleepy puppy.jpeg" alt="A sleepy puppy with pink bows" title="Daisy the pup">
+          <figcaption>Daisy • Puppy • Easy care</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/street baby cat.jpeg" alt="A sweet and gentle cat" title="Cocoa the calm brown cat">
+          <figcaption>Cocoa • Cat • Gentle</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <aside id="sidebar">
+      <iframe
+      src="https://calendar.google.com/calendar/embed?src=c_enUS&ctz=America%2FNew_York"
+      style="border: 0"
+      width="300"
+      height="300"
+      frameborder="0"
+      scrolling="no">
+    </iframe>
+    </aside>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Paw4U. All rights reserved.</p>
+      <p>Template file: <a href="../Templates/petshopmaintemplate.html">petshopmaintemplate.html</a></p>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

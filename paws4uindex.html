@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paw4U • Home</title>
+  <link rel="stylesheet" href="../css/responsivepetshop.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="../images/paws4ulogo.gif" class="logo" alt="Paw4U logo" title="Paw4U">
+      <h1 id="pagetitle">Welcome to Paw4U</h1>
+    </header>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="../homework/paws4uindex.html" aria-current="page">Home</a></li>
+        <li><a href="../homework/paws4uadoptions.html">Adoptions</a></li>
+        <li><a href="../homework/paws4uservices.html">Services</a></li>
+        <li><a href="../homework/paws4uaboutus.html">About Us</a></li>
+        <li><a href="..homework/paws4uslideshow.htl">Slideshow</a></li>
+        <li><a href="..homework/paws4ulocations.html">Locations</a></li>
+      </ul>
+    </nav>
+
+    <main id="content">
+      <h2>Your neighborhood pet shoppe</h2>
+      <p>Lorem ipsum…</p>
+      <div class="gallery">
+        <figure>
+          <img class="spaced-img" src="../images/puppy1.jpeg" alt="Playful puppy" title="Puppy">
+          <figcaption>Jojo • 8 months • Loves fetch</figcaption>
+        </figure>
+        <figure>
+          <img class="spaced-img" src="../images/black cat.jpeg" alt="Studious black cat" title="Black cat">
+          <figcaption>Misty • 2 years • Books connoisseur</figcaption>
+        </figure>
+        <figure>
+          <img class="spaced-img" src="../images/hamster.jpeg" alt="Brown hamster" title="Hamster">
+          <figcaption>Guppy • Listens & loves to run</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <aside id="sidebar">
+      <h3>Upcoming Events</h3>
+      <iframe
+      src="https://calendar.google.com/calendar/embed?src=c_enUS&ctz=America%2FNew_York"
+      style="border: 0"
+      width="300"
+      height="300"
+      frameborder="0"
+      scrolling="no">
+    </iframe>
+    </aside>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Paw4U. All rights reserved.</p>
+      <p>Template file: <a href="../Templates/petshopmaintemplate.html">petshopmaintemplate.html</a></p>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

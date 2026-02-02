@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Shoppe - Slideshow</title>
+  <!-- from homework folder, go up to css folder -->
+  <link rel="stylesheet" href="../css/responsivepetshop.css">
+</head>
+<body>
+  <div id="wrapper">
+
+    <header>
+      <h1>Paws4U Pet Shoppe</h1>
+      <p>Slideshow</p>
+    </header>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="paws4uindex.html">Home</a></li>
+        <li><a href="paws4uadoptions.html">Adoptions</a></li>
+        <li><a href="paws4uservices.html">Services</a></li>
+        <li><a href="paws4uaboutus.html">About Us</a></li>
+        <li><a href="paws4uslideshow.html">Slideshow</a></li>
+        <li><a href="paws4ulocations.html">Locations</a></li>
+      </ul>
+    </nav>
+
+    <aside id="sidebar">
+      <h3>Upcoming Events</h3>
+      <!-- use the calendar URL your instructor gave; this is just a placeholder -->
+      <iframe 
+        src="https://calendar.google.com/calendar/embed?src=c_enUS&ctz=America%2FNew_York"
+        style="border: 0"
+        width="300"
+        height="300"
+        frameborder="0"
+        scrolling="no">
+      </iframe>
+    </aside>
+
+    <main id="content">
+      <h2>Our Adorable Pets</h2>
+      <p>Enjoy a rotating slideshow of some of our adoptable pets.</p>
+
+      <!-- first image in the slideshow -->
+      <img id="slide" src="../images/sleepy puppy.jpeg" alt="Pet slideshow image" width="400">
+
+      <script>
+        // CHANGE THESE NAMES to match your actual adoption images:
+        const images = [
+          "../images/sleepy puppy.jpeg",
+          "../images/street baby cat.jpeg",
+          "../images/puppy1.jpeg",
+          "../images/hamster.jpeg"
+        ];
+
+        let current = 0;
+        const slideImg = document.getElementById("slide");
+
+        function changeSlide() {
+          current = (current + 1) % images.length;
+          slideImg.src = images[current];
+        }
+
+        // change image every 3 seconds
+        setInterval(changeSlide, 3000);
+      </script>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Paws4U Pet Shoppe</p>
+      <nav>
+        <a href="paws4uindex.html">Home</a> |
+        <a href="paws4ucontact.html">Contactus</a>
+      </nav>
+    </footer>
+
+  </div>
+</body>
+</html>
